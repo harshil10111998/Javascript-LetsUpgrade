@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let date = new Date();
+    
+    // ################### Assignment-2 #####################################3
+    hr = date.getHours();
+    min = date.getMinutes();
+    sec = date.getSeconds();
+    day = date.getDay();
+    let weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+    
+   
+    if(hr>12){
+        hr = hr-12;
+        hr = hr + " PM";
+    }
+    else{
+        hr = hr + " AM";
+    }
+    console.log("Assignment-2");
+    console.log("Today is " + weekday[day]);
+    console.log("Current Time is " + hr + " : " + min + " : " + sec);
+    window.onload = function(){
+        document.getElementById("Assignment1").innerHTML = "Today is " + weekday[day] + " Current Time is " + hr + " : " + min + " : " + sec;
+      
+    }
+    
+    
+
+
+    // ######################### Assignment-3 ###############################
+    dd = date.getDate();
+    mm = date.getMonth();
+    yyyy = date.getFullYear();
+    console.log("Assingment-3");
+    console.log("Today's Date is : ")
+    console.log(dd+" : " + mm + " : " + yyyy);
+    console.log(mm + " : " + dd + " : " + yyyy);
+    console.log(mm + " / " + dd + " / " + yyyy);
+    console.log(mm + " / " + dd + " / " + yyyy);
+    
+    
+
+
+
+
+</script>
+<body>
+    <!-- ############################## Assignment-1 ########################## -->
+<h3>Assignment-1</h3>
+<p id="Assignment1"></p>
+<!-- ########################## Assignment-2 ###################################### -->
+
+
+    <h3>Assignment-2</h3>
+    <button type="button" onclick="window.print()">Click here to print the web content</button>  
+
+
+    <!-- #################### Assignment-3 ###################################3 -->
+    <h3>Assignment-3</h3>
+    <p>Look at console</p>
+
+
+</body>
+</html>
